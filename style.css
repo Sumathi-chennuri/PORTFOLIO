@@ -166,6 +166,35 @@ section p, section ul {
 .project-card:hover {
   transform: translateY(-5px);
 }
+/* Certification & Participation Grid */
+.cert-grid, .part-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Cards Style */
+.cert-card, .part-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem 1.2rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.cert-card:hover, .part-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Button inside cert-card */
+.cert-card a.btn {
+  margin-top: 1rem;
+  display: inline-block;
+}
 
 .project-card img {
   width: 100%;
@@ -230,5 +259,6 @@ footer {
 }
 
 ---
+
 
 
